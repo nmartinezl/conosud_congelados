@@ -1,0 +1,147 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #00897b;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.menu {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-content {
+    flex: 2;
+}
+
+h2.category-title {
+    cursor: pointer;
+    padding: 1.5rem;
+    background-size: contain; /* Makes the background fit like a card */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+}
+
+h2.category-title:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.category-title {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('verdu2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#frutas.category-title {
+    background-image: url('frutas1.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; /* Asegura que el texto sea legible */
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-name {
+    flex: 1;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #424242;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    border-top: 2px solid #d84315;
+}
+
+/* Estilos para ocultar y mostrar */
+.hidden {
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-images {
+        display: none; /* Oculta las imágenes en pantallas pequeñas */
+    }
+
+    .menu-content {
+        width: 100%;
+    }
+}

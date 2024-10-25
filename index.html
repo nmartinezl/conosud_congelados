@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Productos Congelados</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Productos Congelados Conosud</h1>
+    </header>
+
+    <section class="menu">
+
+        
+        <div class="menu-content">
+            <h2 class="category-title" style="background-image: url('verdu2.jpg');" onclick="toggleCategory('verduras')">
+                Verduras (Bolsa 1 kg)
+            </h2>
+            <ul id="verduras" class="menu-list hidden">
+                <li><span class="product-name">Mix Lentejas con Vegetales</span><span class="product-price">$5,500.00</span></li>
+                <li><span class="product-name">Mix Wok Arroz con Vegetales</span><span class="product-price">$5,500.00</span></li>
+                <li><span class="product-name">Mix Relleno Tarta Zucchini</span><span class="product-price">$4,300.00</span></li>
+                <li><span class="product-name">Mix Salsa Tomate</span><span class="product-price">$3,900.00</span></li>
+                <li><span class="product-name">Mix Relleno Tarta Espinaca</span><span class="product-price">$5,300.00</span></li>
+                <li><span class="product-name">Acelga</span><span class="product-price">$3,500.00</span></li>
+                <li><span class="product-name">Cebolla Cubo</span><span class="product-price">$5,000.00</span></li>
+                <li><span class="product-name">Calabaza en Cubo</span><span class="product-price">$2,800.00</span></li>
+                <li><span class="product-name">Mix Primavera</span><span class="product-price">$6,500.00</span></li>
+                <li><span class="product-name">Mix Jardinera</span><span class="product-price">$4,100.00</span></li>
+                <li><span class="product-name">Pimiento Rojo</span><span class="product-price">$6,400.00</span></li>
+                <li><span class="product-name">Chauchas Trozadas</span><span class="product-price">$6,400.00</span></li>
+                <li><span class="product-name">Arvejas</span><span class="product-price">$6,000.00</span></li>
+                <li><span class="product-name">Granos Choclo</span><span class="product-price">$6,000.00</span></li>
+                <li><span class="product-name">Espinacaaaaaaaaaaa</span><span class="product-price">$3,800.00</span></li>
+                <li><span class="product-name">Mix Sopa</span><span class="product-price">$3,500.00</span></li>
+                <li><span class="product-name">Champiñones</span><span class="product-price">$7,200.00</span></li>
+                <li><span class="product-name">Zanahoria en Cubos</span><span class="product-price">$2,500.00</span></li>
+                <li><span class="product-name">Mix para Tacos</span><span class="product-price">Sin Stock</span></li>
+                <li><span class="product-name">Mix Vegetales Congelados</span><span class="product-price">$4,600.00</span></li>
+            </ul>
+
+            <h2 class="category-title" style="background-image: url('frutas1.jpg');" onclick="toggleCategory('frutas')">
+                Frutas Congeladas (Envase de 1 kg)
+            </h2>
+            <ul id="frutas" class="menu-list hidden">
+                <li><span class="product-name">Frutos Rojos</span><span class="product-price">$8,500.00</span></li>
+                <li><span class="product-name">Mango en Cubo</span><span class="product-price">$13,500.00</span></li>
+                <li><span class="product-name">Frutillas</span><span class="product-price">$5,600.00</span></li>
+                <li><span class="product-name">Arándanos</span><span class="product-price">$7,200.00</span></li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>¡Por encargo! 
+            <a href="https://api.whatsapp.com/send?phone=5493426506649" target="_blank" style="color: #0cd857; text-decoration: none;">
+                <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px;">
+                Contactame
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
