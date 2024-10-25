@@ -1,96 +1,161 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f8;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 header {
-    background-color: #00897b;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0; /* Reducido para ahorrar espacio */
+  background-color: #00897b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0; /* Reducido para ahorrar espacio */
+}
+
+/* Estilo del h1 para pantallas grandes */
+header h1 {
+  font-size: 2.5rem; /* Tamaño por defecto */
 }
 
 .menu {
-    max-width: 1000px;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 .menu-images {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .menu-content {
-    flex: 2;
+  flex: 2;
 }
 
 h2.category-title {
-    cursor: pointer;
-    padding: 1rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 h2.category-title:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .menu-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0.5rem;
-    display: none;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  display: none;
 }
 
 .menu-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .product-name {
-    flex: 1;
-    font-weight: bold;
+  flex: 1;
+  font-weight: bold;
 }
 
 .product-price {
-    color: #388e3c;
-    font-weight: bold;
+  color: #388e3c;
+  font-weight: bold;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #424242;
+  color: #fff;
+  border-top: 2px solid #d84315;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* Hace que el texto sea más grande para resaltar */
+  margin: 0;
+}
+
+footer img {
+  width: 24px; /* Ajusta el tamaño del icono de WhatsApp */
+  height: 24px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  vertical-align: middle;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    padding: 0.5rem 0; /* Header más pequeño en móvil */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Tamaño reducido para pantallas pequeñas */
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-images {
+    display: none; /* Oculta las imágenes en pantallas pequeñas */
+  }
+
+  .menu-content {
+    width: 100%;
+  }
+
+  h2.category-title {
+    height: 120px; /* Ajusta la altura de las "cartitas" en móvil */
+    padding: 0.5rem;
+    font-size: 1rem; /* Reduce el tamaño de texto en móvil */
+  }
+
+  /* Estilo del footer */
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -98,55 +163,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
+    padding: 1rem; /* Ajustado para ocupar más espacio pero no demasiado */
     background-color: #424242;
     color: #fff;
     border-top: 2px solid #d84315;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
+  }
 
-footer p {
+  /* Estilo del texto dentro del footer */
+  footer p {
     display: flex;
     align-items: center;
-    font-size: 1.2rem; /* Hace que el texto sea más grande para resaltar */
+    font-size: 1.1rem; /* Ajuste para que sea más visible */
     margin: 0;
-}
+  }
 
-footer img {
-    width: 24px; /* Ajusta el tamaño del icono de WhatsApp */
+  /* Estilo del icono de WhatsApp en el footer */
+  footer img {
+    width: 24px; /* Tamaño del icono de WhatsApp */
     height: 24px;
     margin-right: 10px; /* Espacio entre el icono y el texto */
     vertical-align: middle;
-}
-
-
-/* Responsividad */
-@media (max-width: 768px) {
-    header {
-        font-size: 1.2rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
-        padding: 0.5rem 0; /* Header más pequeño en móvil */
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-images {
-        display: none; /* Oculta las imágenes en pantallas pequeñas */
-    }
-
-    .menu-content {
-        width: 100%;
-    }
-
-    h2.category-title {
-        height: 120px; /* Ajusta la altura de las "cartitas" en móvil */
-        padding: 0.5rem;
-        font-size: 1rem; /* Reduce el tamaño de texto en móvil */
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
+  }
 }
